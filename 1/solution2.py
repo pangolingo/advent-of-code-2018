@@ -12,10 +12,10 @@ text_file.close()
 # lines = ["+7", "+7", "-2", "-7", "-4"]
 
 acc = 0
-values = [0]
+values = {0}
 for v in cycle(lines):
   acc += int(v)
   if acc in values:
     print(">>>>",acc)
     break
-  values.append(acc)
+  values.add(acc)
